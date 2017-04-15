@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body {
+  background: #F44336;
+}
+
+* { box-sizing:border-box; }
+
+hgroup { 
+    text-align:center;
+    margin-top: 4em;
+}
+
+h1, h3 { font-weight: 300; }
+
+h1 { color: #636363; }
+
+h3 { color: #4a89dc; }
+
+
+.group { 
+    position: relative; 
+    margin-bottom: 45px; 
+}
+
+input {
+    font-size: 4em;
+    padding: 10px 10px 10px 5px;
+    -webkit-appearance: none;
+    display: block;
+    background: #F44336;
+    color: #fff;
+    width: 100%;
+    margin-top: 50px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #757575;
+}
+
+input:focus { outline: none; }
+input::placeholder {
+    color : #B71C1C;
+}
+footer { 
+    position: relative; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    text-align: center; 
+    color: #fff;
+}
+/* Label */
+
+label {
+    color: #fff; 
+    font-size: 70px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: all 0.2s ease;
+}
+
+
+/* active */
+
+input:focus ~ label, input.used ~ label {
+    top: 0px;
+  transform: scale(.75); left: -2px;
+    /* font-size: 14px; */
+    color: #fff;
+}
+
+
+/* Underline */
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar:before, .bar:after {
+    content: '';
+    height: 2px; 
+    width: 0;
+    bottom: 1px; 
+    position: absolute;
+    background: #fff; 
+    transition: all 0.2s ease;
+}
+
+.bar:before { left: 50%; }
+
+.bar:after { right: 50%; }
+
+
+/* active */
+
+input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
+
+
+/* Highlight */
+
+.highlight {
+    position: absolute;
+    height: 60%; 
+    width: 100px; 
+    top: 25%; 
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+
+/* active */
+
+input:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+
+/* Animations */
+
+@keyframes inputHighlighter {
+    from { background: #eee; }
+    to  { width: 0; background: transparent; }
+}
+
+
+
+
+
+#name
+{
+    font-size: 70px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: light;
+}
+#genre
+{
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+#imdbrating
+{
+    font-size: 27px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+#release
+{
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+#production
+{
+    font-size: 21px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+#runtime
+{
+    font-size: 21px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+#rating
+{
+    font-size: 21px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+#director
+{
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+#writer
+{
+    font-size: 21px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+#actors
+{
+    font-size: 21px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+#language
+{
+    font-size: 21px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+#country
+{
+    font-size: 21px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+#awards
+{
+    font-size: 21px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+#type
+{
+    font-size: 21px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+#seasons
+{
+    font-size: 21px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+#boxoffice
+{
+    font-size: 21px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+#plot
+{
+    font-size: 21px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+
+
