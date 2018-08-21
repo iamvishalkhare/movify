@@ -1,7 +1,7 @@
 function process()
 {
 	//document.getElementById("error_display").innerHTML = '<img src="http://localhost/dashboard/movify/ring.gif">';
-	document.getElementById("error_display").innerHTML = '<img src="http://www.scanitjsr.org/movify/ring.gif">';
+	document.getElementById("error_display").innerHTML = '<img src="http://localhost:8000/ring.gif">';
 	var moviename = document.getElementById("moviename").value;      //fetching value in E-Mail Field
 	if(moviename.length==0)                      //if stuid or password is empty
 	{
@@ -56,7 +56,7 @@ function processCheckDB()
 	{	
 		var moviename = document.getElementById("moviename").value.split(' ').join('_');
 		//var url = "http://localhost/dashboard/movify/moviename.php?moviee="+moviename;  //Sending Data to php script for validation
-		var url = "http://www.scanitjsr.org/movify/moviename.php?moviee="+moviename;
+		var url = "http://localhost:8000/moviename.php?moviee="+moviename;
 		xmlHttp.open("GET",url, true);
 		xmlHttp.onreadystatechange = handleServerResponseLoginstu;                                             //Preparing to send request
 		xmlHttp.send(null); 
